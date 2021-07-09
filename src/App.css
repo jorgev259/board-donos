@@ -1,4 +1,4 @@
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
   #root {
     font-size: 15px !important;
   }
@@ -29,7 +29,7 @@ html, body, #root {
 
 .goal {
   text-align: center;
-  height: 30px;
+  max-height: 30px;
 }
 
 .bg-success{
