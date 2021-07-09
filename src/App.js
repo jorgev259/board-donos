@@ -13,7 +13,9 @@ function App () {
       <div className='row ann py-4'>
         <div className='col mx-3'>
           <div className='row pb-3'>
-            <div className='col goal'>Donation Goal ({goalText}): {currentNumber}$ / {goalNumber}$</div>
+            <div className='col goal'>
+              Donation Goal ({goalText}): {currentNumber}$ / {goalNumber}$
+            </div>
           </div>
           <div className='row'>
             <div className='col'>
