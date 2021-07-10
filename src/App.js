@@ -19,7 +19,7 @@ function App () {
                 <div className='success'>Monthly donation goal reached! Thank you for the support! 🎉</div>
               </div>
               <div className='row'>
-                <div className='success'>Donation Goal ({goalText}): {currentNumber}$ / {goalNumber}$</div>
+                <div className='success'>Donation Goal: {currentNumber}$ / {goalNumber}$</div>
               </div>
               </>
               )
