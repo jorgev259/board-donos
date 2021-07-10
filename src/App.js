@@ -11,12 +11,17 @@ function App () {
   return (
     <div className='container-fluid'>
       <div className='row ann py-4' style={{ backgroundColor: percent >= 100 ? '#2c8c69' : '#2981bf' }}>
-        <div className='col mx-3 my-auto'>
+        <div className='col mx-1 my-auto'>
           {percent >= 100
             ? (
+              <>
               <div className='row'>
-                <div className='coal success'>Monthly donation goal reached! Thank you for the support! 🎉</div>
+                <div className='success'>Monthly donation goal reached! Thank you for the support! 🎉</div>
               </div>
+              <div className='row'>
+                <div className='success'>Donation Goal: 150$ / 80$</div>
+              </div>
+              </>
               )
             : (
               <>

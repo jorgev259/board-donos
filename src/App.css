@@ -4,12 +4,17 @@
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 780px) {
+  .success {
+    font-size: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 615px) {
   .success {
     font-size: 15px !important;
   }
 }
-
 
 #root {
   background-color: rgb(33, 36, 41);
