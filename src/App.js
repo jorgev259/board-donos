@@ -4,12 +4,6 @@ import './App.css'
 import info from './info.json'
 const { goalText, goalNumber, currentNumber } = info
 
-const url = (window.location !== window.parent.location)
-  ? document.referrer
-  : document.location.href
-
-console.log(url)
-
 function App () {
   const percent = currentNumber / goalNumber * 100
   const percentLeft = 100 - percent
