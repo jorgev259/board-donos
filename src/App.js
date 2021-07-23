@@ -4,6 +4,12 @@ import './App.css'
 import info from './info.json'
 const { goalText, goalNumber, currentNumber } = info
 
+const url = (window.location !== window.parent.location)
+  ? document.referrer
+  : document.location.href
+
+console.log(url)
+
 function App () {
   const percent = currentNumber / goalNumber * 100
   const percentLeft = 100 - percent
@@ -15,12 +21,12 @@ function App () {
           {percent >= 100
             ? (
               <>
-              <div className='row'>
-                <div className='success'>Monthly donation goal reached! Thank you for the support! 🎉</div>
-              </div>
-              <div className='row'>
-                <div className='success'>Donation Goal: {currentNumber}$ / {goalNumber}$</div>
-              </div>
+                <div className='row'>
+                  <div className='success'>Monthly donation goal reached! Thank you for the support! 🎉</div>
+                </div>
+                <div className='row'>
+                  <div className='success'>Donation Goal: {currentNumber}$ / {goalNumber}$</div>
+                </div>
               </>
               )
             : (
