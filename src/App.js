@@ -27,7 +27,7 @@ function App () {
               <>
                 <div className='row pb-3'>
                   <div className='col goal'>
-                    Donation Goal ({goalText}): {currentNumber}€ / {goalNumber}€
+                    Donation Goal ({goalText}): {currentNumber}$ / {goalNumber}$
                   </div>
                 </div>
                 <div className='row'>
